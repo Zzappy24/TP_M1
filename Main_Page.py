@@ -10,7 +10,6 @@ import streamlit.components.v1 as components
 st.set_page_config(
     page_title="Multipage App",
 )
-st.write("ed")
 @st.cache()
 def load_lottiefile(filepath: str):
     with open(filepath, "r") as f:
@@ -30,8 +29,8 @@ st.sidebar.success("Select a page above")
 
 st.markdown("<h1 style='text-align: center; color: white;'>TP3 STREAMLIT</h1>", unsafe_allow_html=True)
 
-df_ny = pd.read_csv("/Users/zappy/Downloads/OneDrive_1_14-09-2022/ny-trips-data.csv")
-df_tips=pd.read_csv("/Users/zappy/Downloads/OneDrive_1_14-09-2022/tips.csv", delimiter=";")
+df_ny = pd.read_csv("pages/ny-trips-data.csv")
+df_tips=pd.read_csv("pages/tips.csv", delimiter=";")
 
 
 
