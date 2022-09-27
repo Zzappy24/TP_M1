@@ -11,7 +11,7 @@ import plotly
 def lecture(link):
     return pd.read_csv(link)
 
-df_ny = lecture("ny-trips-data.csv")
+df_ny = lecture("pages/ny-trips-data.csv")
 st.title("NY DATA")
 st.dataframe(df_ny)
 
