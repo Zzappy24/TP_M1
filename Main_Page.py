@@ -10,7 +10,7 @@ import streamlit.components.v1 as components
 st.set_page_config(
     page_title="Multipage App",
 )
-
+st.write("ed")
 @st.cache()
 def load_lottiefile(filepath: str):
     with open(filepath, "r") as f:

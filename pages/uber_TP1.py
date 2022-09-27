@@ -201,7 +201,7 @@ def Tracer_Pie(df_fumeur):
 
 
 st.markdown("<h1 style='text-align: center; color: white;'>Uber</h1>", unsafe_allow_html=True)
-df_uber = pd.read_csv("/Users/zappy/Downloads/OneDrive_1_14-09-2022/tips.csv", delimiter=";")
+df_uber = pd.read_csv("tips.csv", delimiter=";")
 col1,col2,col3 = st.columns(3)
 col2.write(df_uber)
 
